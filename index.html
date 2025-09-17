@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Éducateur Sportif</title>
+  <style>
+    /* Couleurs */
+    :root {
+      --noir: #1a1a1a;
+      --blanc: #ffffff;
+      --vert: #c7ff00;
+      --gris: #2c2c2c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    body {
+      background-color: var(--noir);
+      color: var(--blanc);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: var(--blanc);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--vert);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      background: var(--gris);
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--vert);
+      color: var(--noir);
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #a3d800;
+    }
+
+    .hero img {
+      max-width: 40%;
+      border-radius: 12px;
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: var(--vert);
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--gris);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--gris);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>ATHLETIC TRAINER<br>PORTFOLIO</h2>
+      <p>Je suis éducateur sportif passionné, spécialisé dans l'accompagnement et la motivation pour atteindre vos objectifs.</p>
+      <a href="#contact" class="btn">Me Contacter</a>
+    </div>
+    <img src="fitness.jpg" alt="Coaching sportif">
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>À propos de moi</h3>
+    <p>Je suis un éducateur sportif dynamique avec plusieurs années d'expérience dans le coaching individuel et collectif. Mon objectif est de rendre chaque séance motivante et efficace.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h3>Mes Services</h3>
+    <div class="grid">
+      <div class="card">🏋️‍♂️ Coaching individuel</div>
+      <div class="card">🤸‍♀️ Préparation physique</div>
+      <div class="card">🥗 Conseils nutritionnels</div>
+      <div class="card">📈 Programmes personnalisés</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Email : <a href="mailto:tonmail@mail.com" style="color: var(--vert);">tonmail@mail.com</a></p>
+    <p>Téléphone : 06 00 00 00 00</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Mon Portfolio - Tous droits réservés
+  </footer>
+
+</body>
+</html>
